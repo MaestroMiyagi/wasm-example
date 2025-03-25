@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo TypeScript + WebAssembly (Rust)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora WebAssembly</h1>
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="Número 1" value="5">
+            <input type="number" id="num2" placeholder="Número 2" value="3">
+        </div>
+        <div class="buttons">
+            <button id="add">Sumar</button>
+            <button id="multiply">Multiplicar</button>
+        </div>
+        <div class="result">
+            <h3>Resultado:</h3>
+            <p id="result">-</p>
+        </div>
+    </div>
+    <script src="./dist/main.js" type="module"></script>
+</body>
+</html>

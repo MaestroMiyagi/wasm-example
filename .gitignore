@@ -1,0 +1,10 @@
+target
+node_modules
+dist
+pkg/*
+cargo.lock
+
+.DS_Store
+*.pem
+
+.env*

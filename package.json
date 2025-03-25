@@ -1,0 +1,17 @@
+{
+  "name": "wasm-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build:rust": "wasm-pack build --target web",
+    "build:ts": "tsc",
+    "build": "npm run build:rust && npm run build:ts",
+    "serve": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "wasm-example": "file:"
+  }
+}
